@@ -1,0 +1,20 @@
+@media (max-width: 1024px){
+ :root{
+  --gap: 1.5rem;
+ }
+.root_holder{
+     overflow-x: hidden ;
+     overflow-y: initial;
+     scrollbar-width: none;
+}
+.root_holder.active .section{
+     transform: translateY(-40dvh);
+     overflow-y : hidden;
+    }
+}  
+@media (max-width: 700px) {
+     :root{
+          --gap: 1rem;
+        
+         }
+}

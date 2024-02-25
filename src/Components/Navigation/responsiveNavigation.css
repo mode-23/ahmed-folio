@@ -1,0 +1,32 @@
+@media (max-width: 1024px){
+     .menuHolder{
+          bottom: 7dvh;
+     }
+     .menuBtn{
+          width: 4rem ;
+     }
+     .main_link{
+          font-size: 12px;
+     }
+     .main_link::after{
+          width: 8px;
+     }
+     .navigation{
+          height: 40dvh;
+     }
+
+     .navigation .main_link{
+          font-size: 10px;
+     }
+     .navigation .main_link::after{
+          width: 7px;
+     }
+}
+@media (max-width: 500px){
+     .nav_box img{
+          aspect-ratio: 2/3;
+     }
+     .menuBtn{
+          width: 3rem ;
+     }
+}

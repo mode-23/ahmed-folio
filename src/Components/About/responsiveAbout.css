@@ -1,0 +1,35 @@
+@media (max-width: 1024px){
+     .about_body,
+     .about_container{
+          padding: calc(var(--gap) * 1.4);
+     }
+}
+@media (max-width: 700px){
+     .profile_pic{
+          position: absolute;
+          top: calc(var(--gap) * 1.4);
+          right: calc(var(--gap) * 1.4);
+     }
+     .about_body,
+     .about_container{
+          position: relative;
+     }
+     .intro_about span, .intro_about p{
+          line-height: 1.4;
+          font-size: 5vw;
+     }
+     .intro_about span{
+          color: var(--bg-color);
+          -webkit-text-stroke-width: 0px;
+          font-weight: 700;
+     }
+     .intro_about p{
+          margin-bottom: 0rem;
+     }
+     .profile_pic{
+          width: 29vw;
+     }
+     .about_body ul li span{
+          font-size: 12px;
+     }
+}

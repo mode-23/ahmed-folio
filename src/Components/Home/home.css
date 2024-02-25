@@ -1,0 +1,120 @@
+.home{
+     /* display: grid;
+     grid-template-columns: 1fr 1fr; */
+     display: flex;
+     gap: var(--gap);
+     scrollbar-width: none;
+}
+.inner_home{
+     background-color: var(--hero-color);
+     padding: calc(var(--gap) * 1.8);
+     height: 100dvh;
+     min-height: 100dvh;
+     position: sticky;
+     top: 0;
+     width: calc(50dvw - ((var(--gap) / 2)));
+}
+.inner_home .inner_home_title{
+     position: absolute;
+     top: 40%;
+     left: calc(var(--gap) * 1.8);
+     transform: translateY(-50%);
+}
+.inner_home .inner_home_title h1{
+     font-size: 4.2vw;
+     font-weight: 300;
+     line-height: .85;
+     text-transform: uppercase;
+     height: auto;
+     letter-spacing: -0.04em;
+     animation: up 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+}
+
+@keyframes up {
+     0% {
+          transform: translateY(100px);
+          opacity: 0;
+     }
+     100%{
+          transform: translateY(0px);
+          opacity: 1;
+     }
+}
+@keyframes uplast {
+     0% {
+          transform: translateY(100px) translateX(54px);
+          opacity: 0; 
+     }
+     100%{
+          transform: translateY(0px) translateX(54px);
+          opacity: 1;
+     }
+}
+.inner_home .inner_home_title h1:nth-child(3){
+     transform: translateX(54px);
+     animation: uplast 1s forwards cubic-bezier(0.5, 1, 0.89, 1) !important;
+}
+.short_about{
+     position: absolute;
+     bottom: calc(var(--gap) * 1.8);
+     right: calc(var(--gap) * 1.8);
+     width: calc(100% -  (var(--gap) * 1.8) * 2);
+     display: flex;
+     align-items: flex-end;
+     flex-direction: column;
+     gap: 15px;
+     transition: var(--transition);
+     animation: fade 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes fade {
+     0%{
+          opacity: 0;
+     }
+     100%{
+          opacity: 1;
+     }
+}
+.short_about p{
+     width: 50%;
+     line-height: 1.1;
+     font-family: 'Prompt', sans-serif;
+     font-size: 1vw;
+     color: rgba(0, 0, 0, .7);
+     font-weight: 300;
+}
+.short_about a{
+     width: 50%;
+     color: var(--bg-color);
+}
+.show_case .inside_project{
+     position: relative;
+}
+.show_case{
+     animation: fade 1s forwards ease-in-out;
+     height: 100dvh;
+     overflow-y: auto;
+     scrollbar-width: none;
+     width: calc(50dvw - ((var(--gap) / 2)));
+}
+.more{
+     background-color: transparent;
+     position: absolute;
+     top: 100%;
+     left: 10px;
+     width: fit-content;
+     z-index: 11;
+     padding: calc(var(--gap) + 3.8px) 10px;
+     color: var(--bg-color);
+}
+.front_title{
+     position: absolute;
+     top: calc(var(--gap) * 1.8);
+     right: calc(var(--gap) * 1.8);
+
+}
+.front_title h5{
+     font-weight: 400;
+     text-transform: uppercase;
+     cursor: context-menu;
+}
